@@ -1,305 +1,66 @@
-.micro-piece-page {
-    min-height: 100vh;
-    padding: 35px;
+/* Micro Program Common Style */
 
-    background: #f5f1eb;
-    color: #252a34;
+.micro-page {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
 }
-
-.micro-piece-wrapper {
-    width: 100%;
-    max-width: 1500px;
-    margin: 0 auto;
+.micro-page h1 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 20px;
 }
-
-.micro-header {
-    margin-bottom: 24px;
+.micro-page h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 25px;
 }
-
-.level-badge {
-    display: inline-block;
-
-    margin-bottom: 10px;
-    padding: 5px 12px;
-
-    border-radius: 5px;
-
-    background: #f3dfd2;
-    color: #b85c2f;
-
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 0.5px;
+.micro-page h3 {
+    font-size: 18px;
+    font-weight: 500;
 }
-
-.micro-header h1 {
-    margin: 0;
-    color: #252a34;
-    font-size: 30px;
-    font-weight: 700;
+.micro-page p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 10px 0;
 }
-
-.micro-header p {
-    margin-top: 8px;
-    color: #727985;
+.micro-page strong {
+    font-weight: 500;
+}
+.micro-page ul {
+    padding-left: 20px;
+}
+.micro-page li {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+.run-button {
+    padding: 8px 18px;
     font-size: 14px;
-}
-
-
-.micro-layout {
-    display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
-    gap: 20px;
-    align-items: start;
-}
-
-
-.details-panel {
-    padding: 22px;
-    background: #fffdf9;
-    border: 1px solid #e7dfd5;
-    border-radius: 12px;
-    box-shadow:
-        0 4px 14px rgba(72, 58, 45, 0.06);
-}
-
-.details-panel>h2 {
-    margin: 0 0 22px;
-    color: #252a34;
-    font-size: 17px;
-    font-weight: 700;
-}
-
-.detail-item {
-    padding: 16px 0;
-    border-bottom: 1px solid #eee7df;
-}
-
-.detail-item:last-child {
-    border-bottom: none;
-}
-
-.detail-item span {
-    display: block;
-    margin-bottom: 7px;
-    color: #b85c2f;
-    font-size: 11px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.detail-item strong {
-    display: block;
-    color: #3d434d;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.6;
-}
-
-.detail-item p {
-    margin: 0 0 8px;
-    color: #727985;
-    font-size: 13px;
-    line-height: 1.7;
-}
-
-.workspace-panel {
-    overflow: hidden;
-    background: #fffdf9;
-    border: 1px solid #e7dfd5;
-    border-radius: 12px;
-    box-shadow:
-        0 4px 14px rgba(72, 58, 45, 0.06);
-}
-
-.workspace-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 17px 22px;
-    background: #fffdf9;
-    border-bottom: 1px solid #eee7df;
-}
-
-.workspace-header h2 {
-    margin: 0;
-    color: #252a34;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.workspace-header span {
-    padding: 5px 9px;
-    border-radius: 4px;
-    background: #f3dfd2;
-    color: #b85c2f;
-    font-size: 11px;
-    font-weight: 600;
-}
-
-.code-box {
-    max-height: 580px;
-    overflow: auto;
-    background: #f7f3ee;
-}
-
-.code-box::-webkit-scrollbar {
-    width: 7px;
-    height: 7px;
-}
-
-.code-box::-webkit-scrollbar-track {
-    background: #20242c;
-}
-
-.code-box::-webkit-scrollbar-thumb {
-    background: #4b5563;
-    border-radius: 10px;
-}
-
-.code-box::-webkit-scrollbar-thumb:hover {
-    background: #6b7280;
-}
-
-.code-box pre {
-    margin: 0;
-    padding: 24px;
-}
-
-.code-box code {
-    color: #3f3f46;
-    font-family:
-        Consolas,
-        "Courier New",
-        monospace;
-    font-size: 13px;
-    line-height: 1.8;
-}
-
-.preview-area {
-    padding: 22px;
-    background: #fffdf9;
-    border-top: 1px solid #eee7df;
-}
-
-.preview-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 18px;
-}
-
-.preview-header h2 {
-    margin: 0;
-    color: #252a34;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.preview-header button {
-    padding: 9px 17px;
-    border: none;
-    border-radius: 6px;
-    background: #e07a3f;
-    color: #ffffff;
+    font-weight: 400;
+    background: white;
+    border: 1px solid #999;
     cursor: pointer;
-    font-size: 12px;
-    font-weight: 600;
-    transition: all 0.2s ease;
+}
+.run-button:hover {
+    background: #f5f5f5;
+}
+.execution-log {
+    background: #111;
+    color: #00ff00;
+    padding: 15px;
+    min-height: 120px;
+    font-size: 14px;
+    font-family: monospace;
+    font-weight: 400;
 }
 
-.preview-header button:hover {
-    background: #c96531;
-    transform: translateY(-1px);
-}
-
-.output-box {
-    padding: 16px;
-    background: #faf7f2;
-    border: 1px solid #e7dfd5;
-    border-radius: 8px;
-}
-
-.output-box span {
-    color: #b85c2f;
-    font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-.output-box p {
-    margin: 10px 0 0;
-    color: #52606d;
-    font-family:
-        Consolas,
-        "Courier New",
-        monospace;
-    font-size: 13px;
-    line-height: 1.6;
-}
-
-.details-panel,
-.workspace-panel {
-    transition:
-        box-shadow 0.2s ease,
-        border-color 0.2s ease;
-}
-
-.details-panel:hover,
-.workspace-panel:hover {
-    border-color: #d8c9bc;
-
-    box-shadow:
-        0 8px 22px rgba(72, 58, 45, 0.09);
-}
-
-
-@media (max-width: 900px) {
-
-    .micro-layout {
-        grid-template-columns: 1fr;
-    }
-
-    .details-panel {
-        order: 1;
-    }
-
-    .workspace-panel {
-        order: 2;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .micro-piece-page {
-        padding: 20px;
-    }
-
-    .micro-header h1 {
-        font-size: 24px;
-    }
-
-    .micro-header p {
-        font-size: 13px;
-    }
-
-    .details-panel {
-        padding: 18px;
-    }
-
-    .workspace-header,
-    .preview-header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .preview-header button {
-        width: 100%;
-    }
-
-    .code-box code {
-        font-size: 12px;
-    }
-}
