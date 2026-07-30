@@ -1,17 +1,17 @@
 const metadata = {
-    id: 1,
+    id: 8,
     level: 1,
     primitiveName:
-        "[jQuery Basics:] Understanding jQuery.",
+        "[jQuery Methods:] Understanding the .hide() method.",
     directParentComponent: "jQuery",
     ownersLevel: "JavaScript Library",
     primaryLearn: [
-        "jQuery",
-        "JavaScript Library",
+        ".hide()",
+        "Hide Element",
         "DOM Manipulation"
     ],
     functionalGoal:
-        "jQuery na JavaScript Library JavaScript code-ah short, easy, readable and write panna use pannuvom"
+        ".hide() method na HTML element-ah hide (maraiya) panna use pannuvom."
 };
 
 export default metadata;

@@ -1,17 +1,17 @@
 const metadata = {
-    id: 1,
+    id: 9,
     level: 1,
     primitiveName:
-        "[jQuery Basics:] Understanding jQuery.",
+        "[jQuery Methods:] Understanding the .show() method.",
     directParentComponent: "jQuery",
     ownersLevel: "JavaScript Library",
     primaryLearn: [
-        "jQuery",
-        "JavaScript Library",
+        ".show()",
+        "Display Element",
         "DOM Manipulation"
     ],
     functionalGoal:
-        "jQuery na JavaScript Library JavaScript code-ah short, easy, readable and write panna use pannuvom"
+        ".show() method na hidden-a irukkura HTML element-ah marubadiyum display panna use pannuvom."
 };
 
 export default metadata;
