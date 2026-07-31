@@ -5,7 +5,7 @@ const topics = [
     { title: "CSS", path: "/css/!important", icon: "🎨" },
     { title: "JavaScript", path: "/level1/Array.prototype.flat", icon: "⚡" },
     { title: "jQuery", path: "/jQuery/.addClass()-in-jQuery", icon: "💛" },
-    { title: "React", path: "#", icon: "⚛️" },
+    { title: "React", path: "react/What-is-React", icon: "⚛️" },
     { title: "Next.js", path: "#", icon: "▲" },
 ];
 export default function Page() {
