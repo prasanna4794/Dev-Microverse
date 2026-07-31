@@ -1,86 +1,32 @@
 "use client";
-
-import React, { useState } from "react";
-import { Button, Row, Col, Form } from "react-bootstrap";
-
-const Page = () => {
-    const [inputType, setInputType] = useState("");
-
-    const createInput = (type) => {
-        setInputType(type);
-    };
-
-    return (
-        <div className="micropices-page">
-            <Row className="g-4">
-                <Col sm={12} md={6} lg={4}>
-                    <div className="question-card">
-                        <h2>
-                            1. Dynamic Input Element (Text, Number, Email wrappers)
-                        </h2>
-                        <div className="answer-box">
-                            <p>
-                                dynamic input element na namaku thevayana input ah dyanamic ah kontu varuvathu
-                            </p>
-                        </div>
-                        <div className="code-box">
-                            <h3>
-                                Example Code
-                            </h3>
-                            <pre>
-                                <code>{`function createInput(type) {
-const input =
-document.createElement("input");
-input.type = type;
-return input;
-}`}
-                                </code>
-                            </pre>
-                        </div>
-                        <div className="preview-box">
-                            <h3>
-                                Preview
-                            </h3>
-                            <div className="preview-buttons">
-                                <Button
-                                    className="preview-btn"
-                                    size="sm"
-                                    onClick={() => createInput("text")}
-                                >
-                                    Text
-                                </Button>
-
-                                <Button
-                                    className="preview-btn"
-                                    size="sm"
-                                    onClick={() => createInput("number")}
-                                >
-                                    Number
-                                </Button>
-
-                                <Button
-                                    className="preview-btn"
-                                    size="sm"
-                                    onClick={() => createInput("email")}
-                                >
-                                    Email
-                                </Button>
-                            </div>
-                            {inputType && (
-                                <Form.Control
-                                    className="mt-3"
-                                    type={inputType}
-                                    placeholder={`Enter ${inputType}`}
-                                />
-                            )}
-                        </div>
-                    </div>
-                </Col>
-
-
-            </Row>
-        </div>
-    );
-};
-
-export default Page;
+import Link from "next/link";
+const topics = [
+    { title: "HTML", path: "/html/absolute-relative-path-differ", icon: "🌐" },
+    { title: "CSS", path: "/css/!important", icon: "🎨" },
+    { title: "JavaScript", path: "/level1/Array.prototype.flat", icon: "⚡" },
+    { title: "jQuery", path: "/jQuery/.addClass()-in-jQuery", icon: "💛" },
+    { title: "React", path: "#", icon: "⚛️" },
+    { title: "Next.js", path: "#", icon: "▲" },
+];
+export default function Page() {
+    return <div className="layout">
+        <aside className="sidebar">
+            <h2>Dev Microverse</h2>
+            <ul>{topics.map(t => <li key={t.title}>{t.icon} {t.title}</li>)}</ul>
+        </aside>
+        <main className="main">
+            <div className="hero">
+                <h1>Learn • Practice • Interview</h1>
+                <p>Frontend roadmap with examples and interview questions.</p>
+            </div>
+            <div className="grid">
+                {topics.map(t => <div className="card" key={t.title}>
+                    <div className="icon">{t.icon}</div>
+                    <h3>{t.title}</h3>
+                    <p>Open learning module</p>
+                    <Link className="btn" href={t.path}>Open</Link>
+                </div>)}
+            </div>
+        </main>
+    </div>
+}

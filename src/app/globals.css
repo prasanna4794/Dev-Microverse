@@ -7,42 +7,51 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
 }
+
 .micro-page h1 {
     font-size: 28px;
     font-weight: 500;
     line-height: 1.3;
     margin-bottom: 20px;
 }
+
 .micro-page h2 {
     font-size: 22px;
     font-weight: 500;
     margin-top: 25px;
 }
+
 .micro-page h3 {
     font-size: 18px;
     font-weight: 500;
 }
+
 .micro-page p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
     margin: 10px 0;
 }
+
 .micro-page strong {
     font-weight: 500;
 }
+
 .micro-page ul {
     padding-left: 20px;
 }
+
 .micro-page li {
     font-size: 15px;
     font-weight: 400;
     margin-bottom: 5px;
 }
+
 .divider {
     border-top: 1px solid #ddd;
     margin: 20px 0;
 }
+
 .run-button {
     padding: 8px 18px;
     font-size: 14px;
@@ -51,9 +60,11 @@
     border: 1px solid #999;
     cursor: pointer;
 }
+
 .run-button:hover {
     background: #f5f5f5;
 }
+
 .execution-log {
     background: #111;
     color: #00ff00;
@@ -64,3 +75,199 @@
     font-weight: 400;
 }
 
+.landing-page {
+    min-height: 100vh;
+    background: #f3f7fb;
+    padding: 60px 20px;
+}
+
+.landing-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.landing-header h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1f2937;
+}
+
+.landing-header p {
+    color: #6b7280;
+    font-size: 17px;
+    max-width: 650px;
+    margin: auto;
+}
+
+.topic-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+}
+
+.topic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+}
+
+.topic-card .card-body {
+    padding: 28px;
+    text-align: center;
+    position: relative;
+}
+
+.badge-box {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: #0d6efd;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.icon-box {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    background: #eef5ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.topic-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.topic-card p {
+    color: #6b7280;
+    font-size: 15px;
+    min-height: 55px;
+    margin-bottom: 22px;
+}
+
+.open-btn {
+    padding: 5px 18px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: auto;
+}
+
+.open-btn:hover {
+    transform: scale(1.05);
+}
+
+@media(max-width:768px) {
+
+    .landing-header h1 {
+        font-size: 32px;
+    }
+
+    .landing-header p {
+        font-size: 15px;
+    }
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb
+}
+
+.layout {
+    display: flex;
+    min-height: 100vh
+}
+
+.sidebar {
+    width: 240px;
+    background: #111827;
+    color: #fff;
+    padding: 30px
+}
+
+.sidebar h2 {
+    margin-bottom: 25px
+}
+
+.sidebar ul {
+    list-style: none
+}
+
+.sidebar li {
+    padding: 12px 0
+}
+
+.main {
+    flex: 1;
+    padding: 40px
+}
+
+.hero {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: #fff;
+    padding: 40px;
+    border-radius: 18px;
+    margin-bottom: 30px
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px
+}
+
+.card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    text-align: center;
+    transition: .3s
+}
+
+.card:hover {
+    transform: translateY(-8px)
+}
+
+.icon {
+    font-size: 48px
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 8px 18px;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px
+}
+
+@media(max-width:768px) {
+    .layout {
+        flex-direction: column
+    }
+
+    .sidebar {
+        width: 100%
+    }
+}
