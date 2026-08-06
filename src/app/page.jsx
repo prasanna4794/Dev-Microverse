@@ -6,8 +6,8 @@ const topics = [
     { title: "JavaScript", path: "/level1/Array.prototype.flat", icon: "⚡" },
     { title: "jQuery", path: "/jQuery/.addClass()-in-jQuery", icon: "💛" },
     { title: "React", path: "react/What-is-React", icon: "⚛️" },
-     { title: "Angular", path: "/angular/What-is-Angular", icon: "🅰️" },
-    { title: "Next.js", path: "#", icon: "▲" },
+    { title: "Angular", path: "/angular/What-is-Angular", icon: "🅰️" },
+    { title: "Python", path: "/python/What-is-Python", icon: "🐍" },
 ];
 export default function Page() {
     return <div className="layout">
