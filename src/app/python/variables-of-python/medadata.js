@@ -1,17 +1,17 @@
 const metadata = {
-    id: 2,
+    id: 4,
     level: 1,
     primitiveName:
-        "[Python Basics:] Why do we use Python?",
+        "[Python Basics:] Understanding Variables.",
     directParentComponent: "Python",
     ownersLevel: "Programming Language",
     primaryLearn: [
-        "Python Uses",
-        "Automation",
-        "Web Development"
+        "Variables",
+        "Data Storage",
+        "Assignment Operator"
     ],
     functionalGoal:
-        "Python is used and its real-world applications."
+        "Variable na Data store pannura container"
 };
 
 export default metadata;
