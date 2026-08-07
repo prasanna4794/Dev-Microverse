@@ -8,6 +8,7 @@ const topics = [
     { title: "React", path: "react/What-is-React", icon: "⚛️" },
     { title: "Angular", path: "/angular/What-is-Angular", icon: "🅰️" },
     { title: "Python", path: "/python/What-is-Python", icon: "🐍" },
+    { title: "SQL", path: "/sql/What-is-SQL", icon: "🗄️" },
 ];
 export default function Page() {
     return <div className="layout">
