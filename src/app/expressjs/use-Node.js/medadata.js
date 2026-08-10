@@ -12,7 +12,7 @@ const metadata = {
         "Backend"
     ],
     functionalGoal:
-        "Understand what Node.js is and why it is used in backend development."
+        "Node.js allows JavaScript to run outside the browser, especially on the server."
 };
 
 export default metadata;
