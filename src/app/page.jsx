@@ -19,13 +19,12 @@ const topics = [
     { title: "Python", path: "/python/What-is-Python", icon: "🐍" },
 
     { title: "SQL", path: "/sql/What-is-SQL", icon: "🗄️" },
-    {
-        title: "Data Structure",
-        path: "/datastructure/What-is-Datastructure",
-        icon: "🧩"
-    },
-    { title: "Express.js", path: "/expressjs/What-is-Express.js", icon: "🚂" },
 
+    { title: "Data Structure", path: "/datastructure/What-is-Datastructure", icon: "🧩"},
+
+    { title: "Express.js", path: "/expressjs/What-is-Express.js", icon: "🚂" },
+    
+    { title: "Node.js", path: "/nodejs/What-is-Node.js", icon: "🟢" },
 ];
 
 export default function Page() {
