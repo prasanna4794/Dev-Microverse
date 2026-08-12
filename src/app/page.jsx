@@ -25,6 +25,8 @@ const topics = [
     { title: "Express.js", path: "/expressjs/What-is-Express.js", icon: "🚂" },
     
     { title: "Node.js", path: "/nodejs/What-is-Node.js", icon: "🟢" },
+
+     { title: "Level 2", path: "/level2/dynamic-input-element", icon: "🚀" },
 ];
 
 export default function Page() {
