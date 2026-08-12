@@ -1,17 +1,18 @@
 const metadata = {
-    id: 16,
+    id: 1,
     level: 1,
     primitiveName:
-        "[Array & String Logic Operations:] Grouping nested form elements using Array.prototype.reduce().",
-    directParentComponent: "JavaScript Arrays",
-    ownersLevel: "Native JavaScript",
+        "[Node.js Runtime:] Understanding what Node.js is.",
+    directParentComponent: "Node.js",
+    ownersLevel: "Runtime Environment",
     primaryLearn: [
-        "Array.prototype.reduce()",
-        "Grouping Data",
-        "Accumulator"
+        "Node.js",
+        "JavaScript Runtime",
+        "Server-Side JavaScript",
+        "V8 Engine"
     ],
     functionalGoal:
-        "multiple data va reduce panni single object ah convert pannuvathu"
+        "Node.js is a JavaScript runtime environment used to run JavaScript outside the browser."
 };
 
 export default metadata;

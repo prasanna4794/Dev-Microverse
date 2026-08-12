@@ -1,19 +1,19 @@
 export default function runProgram(addLog) {
 
     addLog("Question:");
-    addLog("What is Node.js?");
+    addLog("What is the V8 Engine in Node.js?");
     addLog("");
 
     addLog("Answer:");
     addLog(
-        "Node.js is a JavaScript runtime environment used to run JavaScript outside the browser."
+        "V8 is a JavaScript engine developed by Google that executes JavaScript code."
     );
 
     addLog("");
 
-    addLog("Important Point:");
+    addLog("Important:");
     addLog(
-        "Node.js is not a programming language and not a framework."
+        "Node.js uses the V8 engine to run JavaScript outside the browser."
     );
 
     addLog("");
@@ -34,8 +34,9 @@ export default function runProgram(addLog) {
 
     addLog("");
 
-    addLog("Node.js uses:");
-    addLog("Google Chrome's V8 JavaScript engine.");
+    addLog("V8 Engine is used by:");
+    addLog("Google Chrome");
+    addLog("Node.js");
 
     addLog("");
 
