@@ -27,6 +27,8 @@ const topics = [
     { title: "Node.js", path: "/nodejs/What-is-Node.js", icon: "🟢" },
 
      { title: "Level 2", path: "/level2/dynamic-input-element", icon: "🚀" },
+     
+     { title: "Level 3", path: "/level3/indexeddb-wrapper", icon: "🛠️" },
 ];
 
 export default function Page() {
