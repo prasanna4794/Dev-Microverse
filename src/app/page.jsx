@@ -29,6 +29,10 @@ const topics = [
      { title: "Level 2", path: "/level2/dynamic-input-element", icon: "🚀" },
      
      { title: "Level 3", path: "/level3/indexeddb-wrapper", icon: "🛠️" },
+
+     { title: "Level 4", path: "/level4/dynamic-json-form", icon: "🎯" },
+
+     { title: "Level 5", path: "/#", icon: "🏆" },
 ];
 
 export default function Page() {
