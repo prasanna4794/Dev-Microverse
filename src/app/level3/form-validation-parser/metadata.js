@@ -1,19 +1,19 @@
 const metadata = {
-    id: 14,
-    level: 2,
+    id: 2,
+    level: 3,
     primitiveName:
-        "[Form Component Assembly:] Field Character Counter Badge.",
-    directParentComponent: "Form Components",
-    ownersLevel: "Level 2 - Assembly of Micro Pieces",
+        "[Utility Layer:] Form Validation Parser - Custom Regex / Conditional Business Rule Evaluator.",
+    directParentComponent: "Form Utilities",
+    ownersLevel: "Level 3 - Utilities",
     primaryLearn: [
-        "Character Count",
-        "String length",
-        "Input Events",
-        "Maximum Character Limit",
-        "Conditional Validation"
+        "Form Validation",
+        "Regular Expressions",
+        "Conditional Rules",
+        "Business Rules",
+        "Validation Errors"
     ],
     functionalGoal:
-        "Character counter na oru input field la type pannum podhu evolo character irukum nu findout panni sollurathu example: hello 5"
+        "Form validation parser na form fill pannum podhu data vaild ah or invaild ah nu check pannum example: invaild na invaild nu show pannum."
 };
 
 export default metadata;

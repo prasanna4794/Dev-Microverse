@@ -3,7 +3,7 @@ export default function runProgram(addLog) {
     addLog("Question:");
 
     addLog(
-        "What is a Field Character Counter Badge?"
+        "What is a Form Validation Parser?"
     );
 
     addLog("");
@@ -11,69 +11,63 @@ export default function runProgram(addLog) {
     addLog("Answer:");
 
     addLog(
-        "A Field Character Counter Badge is a reusable UI component that displays the number of characters entered in a form field and optionally shows the maximum character limit."
+        "A Form Validation Parser is a reusable utility that checks form data against validation rules such as required fields, regular expressions, and conditional business rules."
     );
 
     addLog("");
 
-    addLog("Example:");
+    addLog("Required Validation:");
 
     addLog(
-        '<textarea maxLength={100} />'
+        'if (!data.name) return "Name is required";'
     );
 
     addLog("");
 
-    addLog("Character Count:");
+    addLog("Regex Validation:");
 
     addLog(
-        "text.length"
+        'const emailRegex = /^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$/;'
     );
 
     addLog("");
-
-    addLog("React State:");
 
     addLog(
-        'const [text, setText] = useState("");'
+        'emailRegex.test("test@gmail.com");'
     );
 
     addLog("");
 
-    addLog("Update Text:");
+    addLog("Conditional Business Rule:");
 
     addLog(
-        "onChange={(e) => setText(e.target.value)}"
+        'if (age < 18) return "Age must be 18 or above";'
     );
 
     addLog("");
 
-    addLog("Display Counter:");
+    addLog("Validation Flow:");
 
-    addLog(
-        "{text.length} / {maxLength}"
-    );
-
-    addLog("");
-
-    addLog("Flow:");
-
-    addLog("User types text");
-    addLog("      ↓");
-    addLog("onChange event");
-    addLog("      ↓");
-    addLog("Update state");
-    addLog("      ↓");
-    addLog("text.length");
-    addLog("      ↓");
-    addLog("Display character count");
+    addLog("Form Data");
+    addLog("    ↓");
+    addLog("Validation Parser");
+    addLog("    ↓");
+    addLog("Read Rules");
+    addLog("    ↓");
+    addLog("Required Check");
+    addLog("    ↓");
+    addLog("Regex Check");
+    addLog("    ↓");
+    addLog("Business Rule Check");
+    addLog("    ↓");
+    addLog("Valid / Invalid");
 
     addLog("");
 
     addLog("Important:");
 
     addLog(
-        "Character counters help users understand how much text they can enter into a field."
+        "A validation parser centralizes form validation logic so the same rules can be reused across multiple forms."
     );
 
     addLog("");
