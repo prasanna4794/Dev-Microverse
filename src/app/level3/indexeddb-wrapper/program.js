@@ -3,7 +3,7 @@ export default function runProgram(addLog) {
     addLog("Question:");
 
     addLog(
-        "What is a Field Character Counter Badge?"
+        "What is an IndexedDB Wrapper?"
     );
 
     addLog("");
@@ -11,69 +11,82 @@ export default function runProgram(addLog) {
     addLog("Answer:");
 
     addLog(
-        "A Field Character Counter Badge is a reusable UI component that displays the number of characters entered in a form field and optionally shows the maximum character limit."
+        "An IndexedDB Wrapper is a reusable JavaScript utility that simplifies IndexedDB operations by providing Promise-based CRUD functions."
     );
 
     addLog("");
 
-    addLog("Example:");
+    addLog("CRUD:");
+
+    addLog("C - Create");
+    addLog("R - Read");
+    addLog("U - Update");
+    addLog("D - Delete");
+
+    addLog("");
+
+    addLog("Create:");
 
     addLog(
-        '<textarea maxLength={100} />'
+        'await db.add("users", user);'
     );
 
     addLog("");
 
-    addLog("Character Count:");
+    addLog("Read:");
 
     addLog(
-        "text.length"
+        'const user = await db.get("users", 1);'
     );
 
     addLog("");
 
-    addLog("React State:");
+    addLog("Update:");
 
     addLog(
-        'const [text, setText] = useState("");'
+        'await db.update("users", user);'
     );
 
     addLog("");
 
-    addLog("Update Text:");
+    addLog("Delete:");
 
     addLog(
-        "onChange={(e) => setText(e.target.value)}"
+        'await db.remove("users", 1);'
     );
 
     addLog("");
 
-    addLog("Display Counter:");
+    addLog("Promise Flow:");
 
-    addLog(
-        "{text.length} / {maxLength}"
-    );
-
-    addLog("");
-
-    addLog("Flow:");
-
-    addLog("User types text");
+    addLog("IndexedDB Request");
     addLog("      ↓");
-    addLog("onChange event");
+    addLog("Promise");
     addLog("      ↓");
-    addLog("Update state");
+    addLog("resolve / reject");
     addLog("      ↓");
-    addLog("text.length");
+    addLog("async / await");
     addLog("      ↓");
-    addLog("Display character count");
+    addLog("Result");
+
+    addLog("");
+
+    addLog("CRUD Flow:");
+
+    addLog("Create");
+    addLog("   ↓");
+    addLog("Read");
+    addLog("   ↓");
+    addLog("Update");
+    addLog("   ↓");
+    addLog("Delete");
 
     addLog("");
 
     addLog("Important:");
 
     addLog(
-        "Character counters help users understand how much text they can enter into a field."
+        "An IndexedDB Wrapper hides the complex IndexedDB event handling and provides simpler Promise-based functions."
     );
 
     addLog("");

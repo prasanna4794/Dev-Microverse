@@ -1,19 +1,19 @@
 const metadata = {
-    id: 14,
-    level: 2,
+    id: 1,
+    level: 3,
     primitiveName:
-        "[Form Component Assembly:] Field Character Counter Badge.",
-    directParentComponent: "Form Components",
-    ownersLevel: "Level 2 - Assembly of Micro Pieces",
+        "[Utility Layer:] IndexedDB Wrapper - Asynchronous Promise-based CRUD layer.",
+    directParentComponent: "Browser Storage Utilities",
+    ownersLevel: "Level 3 - Utilities",
     primaryLearn: [
-        "Character Count",
-        "String length",
-        "Input Events",
-        "Maximum Character Limit",
-        "Conditional Validation"
+        "IndexedDB",
+        "Promise-based API",
+        "CRUD Operations",
+        "Async/Await",
+        "Local Database Storage"
     ],
     functionalGoal:
-        "Character counter na oru input field la type pannum podhu evolo character irukum nu findout panni sollurathu example: hello 5"
+        "Create a reusable Promise-based utility layer that simplifies IndexedDB Create, Read, Update, and Delete operations."
 };
 
 export default metadata;
